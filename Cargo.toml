@@ -39,7 +39,7 @@ gobject-sys = { git = "https://github.com/cthorner/sys", branch = "crate-custom"
 cairo-rs = { git = "https://github.com/cthorner/cairo", branch="0.7-custom", version="0.7.0", features=["v1_16"] }
 cairo-sys-rs = { git = "https://github.com/cthorner/cairo", branch="0.7-custom", vversion="0.9.0" }
 # pangocairo-sys = "0.10.0"
-pangocairo-sys = { git = "https://github.com/cthorner/sys", branch = "crate-custom", version = "0.9.0" }
+pangocairo-sys = { git = "https://github.com/cthorner/sys", branch = "crate-custom", version = "0.10.0" }
 # pango-sys = "0.9.0"
 pango-sys = { git = "https://github.com/cthorner/sys", branch = "crate-custom", version = "0.9.0" }
 # pango = "0.7.0"
