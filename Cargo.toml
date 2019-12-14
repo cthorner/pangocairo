@@ -28,14 +28,22 @@ version = "0.1.3"
 optional = true
 
 [dependencies]
-glib = "0.8.0"
-glib-sys = "0.9.0"
-gobject-sys = "0.9.0"
-cairo-sys-rs = "0.9.0"
-cairo-rs = "0.7.0"
-pangocairo-sys = "0.10.0"
-pango-sys = "0.9.0"
-pango = "0.7.0"
+# glib = "0.8.0"
+# glib-sys = "0.9.0"
+glib = { git = "https://github.com/cthorner/glib", branch = "0.8.0-custom", version = "0.8.0" }
+glib-sys = { git = "https://github.com/cthorner/sys", branch = "crate-custom", version = "0.9.0" }
+# gobject-sys = "0.9.0"
+gobject-sys = { git = "https://github.com/cthorner/sys", branch = "crate-custom", version = "0.9.0" }
+# cairo-sys-rs = "0.9.0"
+# cairo-rs = "0.7.0"
+cairo-rs = { git = "https://github.com/cthorner/cairo", branch="0.7-custom", version="0.7.0", features=["v1_16"] }
+cairo-sys-rs = { git = "https://github.com/cthorner/cairo", branch="0.7-custom", vversion="0.9.0" }
+# pangocairo-sys = "0.10.0"
+pangocairo-sys = { git = "https://github.com/cthorner/sys", branch = "crate-custom", version = "0.9.0" }
+# pango-sys = "0.9.0"
+pango-sys = { git = "https://github.com/cthorner/sys", branch = "crate-custom", version = "0.9.0" }
+# pango = "0.7.0"
+pango = { git = "https://github.com/cthorner/pango", branch = "crate-custom", version = "0.7.0" }
 libc = "0.2"
 bitflags = "1.0"
 
